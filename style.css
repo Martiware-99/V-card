@@ -1,0 +1,171 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 10% 5% 25% 13.6% 16.4%;
+    grid-template-rows: 9.9% 10.7% 37% 20.7% 8.2% 13.5%;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Blue-1 Blue-1 Red-1 Red-1 Red-1 White-1"
+      "Blue-1 Blue-1 Yellow-1 Yellow-1 White-4 White-1"
+      "White-2 White-3 Yellow-1 Yellow-1 White-4 White-1"
+      "White-2 Blue-2 Blue-2 Red-2 Red-2 White-1"
+      "White-2 Blue-2 Blue-2 White-5 Blue-3 Blue-3"
+      "Yellow-2 Yellow-2 Yellow-2 White-5 Blue-3 Blue-3";
+  }
+  
+  .Blue-1 { 
+      grid-area: Blue-1; 
+      background: #225095;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      font-size: 135%;
+}
+
+  .Red-1 { 
+      grid-area: Red-1; 
+      background-color: #dd0100;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 120%;
+ }
+  
+  .White-1 { 
+      grid-area: White-1; 
+      background-color: #ffffff;
+    }
+
+   .White-1 .Logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+   }
+  
+  .White-3 { 
+      grid-area: White-3;
+      background-color: #ffffff;
+    }
+  
+  .Yellow-1 { 
+      grid-area: Yellow-1; 
+      background-color: #fac901;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 115%;
+      font-weight:550;
+    }
+  
+  .White-4 { 
+      grid-area: White-4;
+      background-color: #ffffff;
+    }
+  
+  .White-2 { 
+      grid-area: White-2; 
+      background-color: #ffffff;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+
+  .Blue-2 { 
+      grid-area: Blue-2; 
+      background-color: #225095;
+    }
+  
+  .Red-2 { 
+      grid-area: Red-2;
+      background-color: #dd0100;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+  .Yellow-2 { 
+      grid-area: Yellow-2;
+      background-color: #fac901; 
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+    }
+
+   .Yellow-2 img {
+       height: 50px;
+       width: 50px;
+   }
+  
+  .Blue-3 { 
+      grid-area: Blue-3; 
+      background-color: #225095;
+    }
+  
+  .White-5 { 
+      grid-area: White-5; 
+      background-color: #ffffff;
+    }
+
+    .container div:not(.info, .bio, .social, .links), .container {
+        border: 5px solid black;
+    }
+
+    html{
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: large;
+    }
+
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .Logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .social {
+        padding-left: 10px;
+    }
+
+    .bio {
+        padding-left: 2px;
+    }
+
+    .info :nth-of-type(even) {
+        margin-top: 0px;
+    }
+
+    .info :nth-of-type(odd) {
+        margin-bottom: 5px;
+    }
+
+    .links p:nth-child(1) {
+   background-color: #225095;
+   border: 4px solid black;
+   color: #ffffff;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin-right: 15px;
+   border-radius: 32px;
+    }
+
+    .links p:nth-child(2) {
+        background-color: #ffffff;
+        border: 4px solid black;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 15px;
+        border-radius: 32px;
+         }
